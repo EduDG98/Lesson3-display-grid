@@ -1,0 +1,37 @@
+* {
+    border: 1px solid sandybrown;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1em;
+    padding: 1em;
+    align-items: center;
+    justify-items: center;
+}
+
+.menu div {
+    padding: 0.5em 1em 0.5em 1em;
+    border-radius: 5px;
+    /*cursor: pointer;*/
+}
+
+menu div a {
+    display: inline-block;
+}
+
+.main-logo {
+    width: 200px;
+    cursor: pointer;
+}
+
+a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+}

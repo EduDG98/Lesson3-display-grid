@@ -1,5 +1,4 @@
 * {
-    border: 1px solid sandybrown;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -12,8 +11,7 @@
     gap: 1em;
     padding: 1em;
     align-items: center;
-
-
+    background-color: rgba(42, 148, 65, 0.534);
 }
 
 .menu-item {
@@ -28,15 +26,17 @@ button {
     border-radius: 25px;
     background-color: cornflowerblue;
     cursor: pointer;
+    border: none;
 }
 
 button:hover {
     transition: all 0.8s ease 0s;
-
+    color: whitesmoke;
+    font-weight: bold;
+    background-color: rgba(100, 148, 237, 0.767);
 }
 
 .main-logo {
     width: 200px;
-    display: grid;
 
 }

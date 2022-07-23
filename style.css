@@ -20,7 +20,7 @@
     align-items: center;
 }
 
-button {
+.menu button {
     width: 160px;
     padding: 0.5em 1em 0.5em 1em;
     border-radius: 25px;
@@ -29,14 +29,84 @@ button {
     border: none;
 }
 
-button:hover {
+.menu button:hover {
     transition: all 0.8s ease 0s;
     color: whitesmoke;
-    font-weight: bold;
+    font-size: 18px;
     background-color: rgba(100, 148, 237, 0.767);
 }
 
 .main-logo {
     width: 200px;
+    cursor: pointer;
+    ;
 
+}
+
+.main-logo:hover {
+    width: 201px;
+}
+
+
+
+.page * {
+    border: 1px solid black;
+}
+
+header {
+    margin: 1em;
+    grid-area: hd;
+}
+
+footer {
+    margin: 0 1em 1em 1em;
+    grid-area: ft;
+}
+
+article {
+    margin: 1em;
+    grid-area: main;
+}
+
+aside {
+    padding: 0.5em;
+    background-color: aqua;
+    grid-area: sidebar;
+    display: grid;
+    grid-auto-rows: 40px;
+}
+
+.side-nav {
+    background-color: rgb(64, 64, 102);
+
+}
+
+.page {
+
+    height: 800px;
+    display: grid;
+    background-color: rgba(10, 10, 10, 0.137);
+    grid-template-columns: 1fr 7fr;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-areas:
+        "sidebar hd"
+        "sidebar main"
+        "sidebar ft";
+    gap: 1em;
+}
+
+aside button {
+    width: 170px;
+    height: 30px;
+    background-color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+aside button:hover {
+    transition: all 0.8s ease 0s;
+    font-size: 12px;
+    color: whitesmoke;
+    background-color: rgb(223, 47, 47);
 }
